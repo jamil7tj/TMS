@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    
+}
+
+<form id="StudentCreateForm" name="StudentCreateForm" method="POST">
+
+    <input type="text" id="Name" name="Name"/>
+    <input type="text" id="Address" name="Address"/><br/>
+    <input type="text" id="Contact" name="Contact" />
+    <input type="text" id="Mobile" name="Mobile"/>
+
+
+    <input type="submit" name="SaveButton" id="SaveButton"/>
+    <input type="button" value="OK" name="Ok" id="OK"/><br/>
+    <input type="button" value="No" name="No" id="No"/><br/>
+
+
+    <button class="btn btn-primary btn-lg" type="button" data-toggle="modal" data-target="#myModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+              
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+
+    </div><!-- /.modal -->
+
+
+</form>
+
+@section scripts{
+    
+<script src="~/Scripts/TMS/StudentCreate.js"></script>
+}
